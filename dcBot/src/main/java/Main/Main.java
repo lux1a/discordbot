@@ -27,7 +27,7 @@ public class Main {
 
     public static void main(String[] args) throws LoginException, IOException {
 
-        BufferedReader reader = new BufferedReader(new FileReader(new File("variables.txt")));
+        BufferedReader reader = new BufferedReader(new FileReader(new File("/home/pi/variables.txt")));
         final String token = reader.readLine();
         ownerID = reader.readLine();
         prefix = reader.readLine();
