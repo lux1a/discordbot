@@ -1,5 +1,5 @@
-# discordbot
-Functions:
+# Lux's Bot
+**Functions**:
 - Send Anime Pictures (Neko, Kitsune, Waifu)
 - Send Kurumi Pics and Gifs
 - Send Crypto Prices
