@@ -15,7 +15,7 @@ public class Neko extends Json {
         if (e.getAuthor().isBot()) {
         } else if (e.getMessage().getContentRaw().equals(Main.prefix + "neko")) {
             nekoText(e);
-        } else if (Arrays.asList(wrongSpelling).contains(e.getMessage().getContentRaw())) {
+        } else if (Arrays.asList(wrongSpelling).contains(Main.prefix + e.getMessage().getContentRaw())) {
             e.getChannel().sendMessage("Did you mean **Neko**?").queue();
             nekoText(e);
         }

@@ -28,11 +28,14 @@ public class Main {
 
     public static void main(String[] args) throws LoginException, IOException {
 
-        BufferedReader reader = new BufferedReader(new FileReader(new File("/variables.txt")));
-        final String token = reader.readLine();
-        ownerID = reader.readLine();
-        prefix = reader.readLine();
-        reader.close();
+        //BufferedReader reader = new BufferedReader(new FileReader(new File("variables.txt")));
+       // final String token = reader.readLine();
+        //ownerID = reader.readLine();
+       // prefix = reader.readLine();
+        //reader.close();
+        final String token = "NzgyNTcyODA3OTI5MjAwNjQx.X8OJuA.Nb5e-HgSHVJ-Da-TqKbwcWKR5QE";
+        ownerID = "";
+        prefix = "_";
 
         JDABuilder jdaBuilder = JDABuilder.createDefault(token);
         JDA jda = null;
