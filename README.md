@@ -1,6 +1,6 @@
 # Lux's Bot
 **Functions**:
-- Send Anime Pictures (Neko, Kitsune, Waifu)
+- Send Anime Pictures (Neko, Kitsune, Waifu) [does not work currently on raspberry pi, idk why]
 - Send Kurumi Pics and Gifs
 - Send Crypto Prices
 - Send the entire Bee Movie Script
