@@ -4,6 +4,7 @@
 - Send Kurumi Pics and Gifs
 - Send Crypto Prices
 - Send the entire Bee Movie Script
+- Send various Ascii Art
 - extra commands: "say", "vanish" and "ping/pong"
 
 **Notes**:
