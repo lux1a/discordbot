@@ -5,6 +5,7 @@ import Anime.Kurumi;
 import Anime.Neko;
 import Anime.Waifu;
 import Essentials.Info;
+import Other.Ascii;
 import Other.BeeMovieScript;
 import Other.Crypto;
 import Essentials.Help;
@@ -47,7 +48,8 @@ public class Main {
         BeeMovieScript bee = new BeeMovieScript();
         Say say = new Say();
         Info info = new Info();
-        jdaBuilder.addEventListeners(vanish, help, pong, neko, waifu, kitsune, bee, kurumi, say, crypto, info);
+        Ascii ascii = new Ascii();
+        jdaBuilder.addEventListeners(vanish, help, pong, neko, waifu, kitsune, bee, kurumi, say, crypto, info, ascii);
         jdaBuilder.setActivity(Activity.watching("time fly by"));
         jda = jdaBuilder.build();
     }

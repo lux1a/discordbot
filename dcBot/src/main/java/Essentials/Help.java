@@ -29,7 +29,7 @@ public class Help extends ListenerAdapter {
         embedBuilder.setDescription("" + "```ARM\n" + "_neko: Catgirl Image\n" + "```" + "```ARM\n" + "_waifu: Waifu Image\n" + "```" + "```ARM\n" +
          "_kitsune: Foxgirl Image\n" + "```" + "```ARM\n" + "_info: Shows info\n" + "```"  + "```ARM\n" + "_ping: pong!\n" + "```" + "```ARM\n" + "_vanish: Message vanishes after one second\n" +
           "```" + "```ARM\n" + "_bee: Bee Movie Script (works once every 50min)\n" + "```" + "```ARM\n" + "_help: this message\n" + "```" + "```ARM\n" + "_kurumi: Kurumi Picture\n" + "```" + "```ARM\n" + "_kurumigif: Kurumi Gif)\n" + "```"
-        + "```ARM\n" + "_crypto: Price Data for any cryptocurrency\n" + "```");
+        + "```ARM\n" + "_crypto: Price Data for any cryptocurrency\n" + "```" + "```ARM\n" + "_ascii: _ascii help for more info\n" + "```");
         embedBuilder.setAuthor("Luxia's Bot", "https://bit.ly/3fKaDDv", "https://cdn.discordapp.com/avatars/684629625313558557/1705ee73c703b8b3343a29acd24973b3.png");
         embedBuilder.setColor(Color.decode("#db273a"));
         return embedBuilder.build();
