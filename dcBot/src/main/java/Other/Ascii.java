@@ -15,6 +15,8 @@ public class Ascii extends ListenerAdapter {
     public void onMessageReceived(MessageReceivedEvent e) {
         String[] tokens = e.getMessage().getContentRaw().split(" ");
         if(e.getAuthor().isBot()){
+        } else if (e.getMessage().getContentRaw().startsWith(Main.prefix + "ascii") && e.getMessage().getContentRaw().contains("help")) {
+            e.getChannel().sendMessage(createEmbed()).queue();
         } else if (e.getMessage().getContentRaw().startsWith(Main.prefix + "ascii")) {
             if(e.getMessage().getContentRaw().length() < 8) {
                 e.getChannel().sendMessage(createEmbed()).queue();
@@ -130,8 +132,6 @@ public class Ascii extends ListenerAdapter {
                         "⠄⠄⠄⠄⠄⠄⠑⠠⣠⣴⣾⣿⣿⣿⣿⣿⣿⣇⠉⠄⠻⣿⣷⣄⡀⠄⠄⠄⠄⠄⠄⠄⠄").queue();
             }
             e.getChannel().sendMessage("").queue();
-        } else if (e.getMessage().getContentRaw().startsWith(Main.prefix + "ascii") && e.getMessage().getContentRaw().contains("help")) {
-            e.getChannel().sendMessage(createEmbed()).queue();
         }
     }
 
