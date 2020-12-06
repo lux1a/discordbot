@@ -135,8 +135,9 @@ public class Ascii extends ListenerAdapter {
                     e.getChannel().sendMessage("Please wait for " + (30 - (System.currentTimeMillis()/1000L) + timeStart) + " seconds to use this command again.").queue();
                 } else {
                     pacman(e);
+                    timeStart = (System.currentTimeMillis()/1000L);
                 }
-                timeStart = (System.currentTimeMillis()/1000L);
+
             }
         }
     }
