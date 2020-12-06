@@ -13,9 +13,9 @@ public class Ascii extends ListenerAdapter {
 
     @Override
     public void onMessageReceived(MessageReceivedEvent e) {
+        String[] tokens = e.getMessage().getContentRaw().split(" ");
         if(e.getAuthor().isBot()){
         } else if (e.getMessage().getContentRaw().startsWith(Main.prefix + "ascii")) {
-            String[] tokens = e.getMessage().getContentRaw().split(" ");
             if(e.getMessage().getContentRaw().length() < 8) {
                 e.getChannel().sendMessage(createEmbed()).queue();
             } else if (tokens[1].equals("ahegao")) {
@@ -130,7 +130,7 @@ public class Ascii extends ListenerAdapter {
                         "⠄⠄⠄⠄⠄⠄⠑⠠⣠⣴⣾⣿⣿⣿⣿⣿⣿⣇⠉⠄⠻⣿⣷⣄⡀⠄⠄⠄⠄⠄⠄⠄⠄").queue();
             }
             e.getChannel().sendMessage("").queue();
-        } else if (e.getMessage().getContentRaw().contains(Main.prefix + "ascii" + "help")) {
+        } else if (e.getMessage().getContentRaw().startsWith(Main.prefix + "ascii") && e.getMessage().getContentRaw().contains(tokens[1])) {
             e.getChannel().sendMessage(createEmbed()).queue();
         }
     }
@@ -138,7 +138,7 @@ public class Ascii extends ListenerAdapter {
     private MessageEmbed createEmbed() {
         EmbedBuilder embedBuilder = new EmbedBuilder();
         embedBuilder.setTitle("Available Ascii Art:");
-        embedBuilder.setDescription("`ahegao` \n \n`uwu` \n \n `ayaya` \n \n `02` \n \n `pikachu` \n \n `chika` \n \n `padoru`");
+        embedBuilder.setDescription("`ahegao` \n `uwu` \n `ayaya` \n `02` \n `pikachu` \n `chika` \n `padoru`");
         embedBuilder.setColor(Color.decode("#db273a"));
         return embedBuilder.build();
     }
