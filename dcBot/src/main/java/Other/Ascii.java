@@ -200,6 +200,7 @@ public class Ascii extends ListenerAdapter {
                                 "─▐████─────────────────────────────   \n" +
                                 "──█████▄───────────────────────────   \n" +
                                 "───▀████▀────────────────────────── ").queueAfter(12, TimeUnit.SECONDS);
+                        timeStart = (System.currentTimeMillis()/1000L);
                     });
                 }
             }
