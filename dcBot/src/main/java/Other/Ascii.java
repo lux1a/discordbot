@@ -130,7 +130,7 @@ public class Ascii extends ListenerAdapter {
                         "⠄⠄⠄⠄⠄⠄⠑⠠⣠⣴⣾⣿⣿⣿⣿⣿⣿⣇⠉⠄⠻⣿⣷⣄⡀⠄⠄⠄⠄⠄⠄⠄⠄").queue();
             }
             e.getChannel().sendMessage("").queue();
-        } else if (e.getMessage().getContentRaw().startsWith(Main.prefix + "ascii") && e.getMessage().getContentRaw().contains(tokens[1])) {
+        } else if (e.getMessage().getContentRaw().startsWith(Main.prefix + "ascii") && e.getMessage().getContentRaw().contains("help")) {
             e.getChannel().sendMessage(createEmbed()).queue();
         }
     }
