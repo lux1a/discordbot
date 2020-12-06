@@ -130,7 +130,7 @@ public class Ascii extends ListenerAdapter {
                         "⠄⠄⠄⠄⠄⠄⠑⠠⣠⣴⣾⣿⣿⣿⣿⣿⣿⣇⠉⠄⠻⣿⣷⣄⡀⠄⠄⠄⠄⠄⠄⠄⠄").queue();
             }
             e.getChannel().sendMessage("").queue();
-        } else if (e.getMessage().getContentRaw().equals(Main.prefix + "ascii help")) {
+        } else if (e.getMessage().getContentRaw().contains(Main.prefix + "ascii" + "help")) {
             e.getChannel().sendMessage(createEmbed()).queue();
         }
     }
@@ -138,7 +138,7 @@ public class Ascii extends ListenerAdapter {
     private MessageEmbed createEmbed() {
         EmbedBuilder embedBuilder = new EmbedBuilder();
         embedBuilder.setTitle("Available Ascii Art:");
-        embedBuilder.setDescription("`ahegao` + \n `uwu` + \n `ayaya` + \n `02` + \n `pikachu` + \n `chika` + \n `padoru`");
+        embedBuilder.setDescription("`ahegao` \n \n`uwu` \n \n `ayaya` \n \n `02` \n \n `pikachu` \n \n `chika` \n \n `padoru`");
         embedBuilder.setColor(Color.decode("#db273a"));
         return embedBuilder.build();
     }
