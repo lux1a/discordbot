@@ -18,7 +18,7 @@ public class Channel extends ListenerAdapter {
         MessageChannel channel = e.getChannel();
         if (e.getAuthor().isBot()) {
         } else if (e.getMessage().getContentRaw().equals(Main.prefix + "channel")) {
-            e.getChannel().sendMessage("Current Channel: " + "`" + channel + "`").queue();
+            e.getChannel().sendMessage("Please mention a user.").queue();
         } else if (e.getMessage().getContentRaw().equals(Main.prefix + "user")) {
             e.getChannel().sendMessage("Your ID is: " + e.getAuthor().getId()).queue();
         } else if (e.getMessage().getContentRaw().startsWith(Main.prefix + "user") && e.getMessage().getContentRaw().contains("@")) {
