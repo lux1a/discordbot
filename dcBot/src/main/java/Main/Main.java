@@ -30,14 +30,11 @@ public class Main {
 
     public static void main(String[] args) throws LoginException, IOException {
 
-        /*BufferedReader reader = new BufferedReader(new FileReader(new File("variables.txt")));
+        BufferedReader reader = new BufferedReader(new FileReader(new File("variables.txt")));
         final String token = reader.readLine();
         ownerID = reader.readLine();
         prefix = reader.readLine();
-        reader.close();*/
-        final String token = "NzgyNTcyODA3OTI5MjAwNjQx.X8OJuA.a1BT6AyJ0yfsjOFA94_Y_Q9OJwM";
-        ownerID = "as";
-        prefix = "_";
+        reader.close();
 
         JDABuilder jdaBuilder = JDABuilder.createDefault(token);
         JDA jda = null;
