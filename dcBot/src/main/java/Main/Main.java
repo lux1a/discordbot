@@ -9,6 +9,7 @@ import Other.Ascii;
 import Other.BeeMovieScript;
 import Other.Crypto;
 import Essentials.Help;
+import Utility.Channel;
 import Utility.Pong;
 import Utility.Say;
 import Utility.Vanish;
@@ -29,11 +30,14 @@ public class Main {
 
     public static void main(String[] args) throws LoginException, IOException {
 
-        BufferedReader reader = new BufferedReader(new FileReader(new File("variables.txt")));
+        /*BufferedReader reader = new BufferedReader(new FileReader(new File("variables.txt")));
         final String token = reader.readLine();
         ownerID = reader.readLine();
         prefix = reader.readLine();
-        reader.close();
+        reader.close();*/
+        final String token = "NzgyNTcyODA3OTI5MjAwNjQx.X8OJuA.a1BT6AyJ0yfsjOFA94_Y_Q9OJwM";
+        ownerID = "as";
+        prefix = "_";
 
         JDABuilder jdaBuilder = JDABuilder.createDefault(token);
         JDA jda = null;
@@ -49,7 +53,8 @@ public class Main {
         Say say = new Say();
         Info info = new Info();
         Ascii ascii = new Ascii();
-        jdaBuilder.addEventListeners(vanish, help, pong, neko, waifu, kitsune, bee, kurumi, say, crypto, info, ascii);
+        Channel channel = new Channel();
+        jdaBuilder.addEventListeners(vanish, help, pong, neko, waifu, kitsune, bee, kurumi, say, crypto, info, ascii, channel);
         jdaBuilder.setActivity(Activity.watching("time fly by"));
         jda = jdaBuilder.build();
     }
