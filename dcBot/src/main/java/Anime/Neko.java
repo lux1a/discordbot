@@ -1,11 +1,11 @@
 package Anime;
 
 import Main.Main;
+import Other.Json;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
-import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -37,19 +37,10 @@ public class Neko extends Json {
     }
 
     private void nekoText(MessageReceivedEvent e) throws IOException {
-       /* JSONObject json = null;
-        try {
-            json = readJsonFromUrl("https://neko-love.xyz/api/v1/neko");
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-        assert json != null;
-        e.getChannel().sendMessage(json.get("url").toString()).queue();*/
-
         String sURL = "https://neko-love.xyz/api/v1/neko";
         URL url = new URL(sURL);
         URLConnection request = url.openConnection();
-        request.setRequestProperty("User-Agent", "Mozilla/5.0");
+        request.setRequestProperty("User-Agent", "Mozilla/5.0"); //needed so the request does not get blocked when coming from a raspberry pi
         request.connect();
 
         JsonParser jp = new JsonParser();
@@ -57,8 +48,5 @@ public class Neko extends Json {
         JsonObject rootobj = root.getAsJsonObject();
         String nekoUrl = rootobj.get("url").getAsString();
         e.getChannel().sendMessage(nekoUrl).queue();
-
     }
-
-
 }

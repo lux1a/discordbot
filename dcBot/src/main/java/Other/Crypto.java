@@ -1,6 +1,5 @@
 package Other;
 
-import Anime.Json;
 import Main.Main;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.MessageEmbed;
