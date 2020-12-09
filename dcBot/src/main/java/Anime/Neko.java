@@ -1,11 +1,12 @@
 package Anime;
 
 import Main.Main;
-import Other.Json;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
+import net.dv8tion.jda.api.hooks.ListenerAdapter;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -13,7 +14,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.Arrays;
 
-public class Neko extends Json {
+public class Neko extends ListenerAdapter {
 
     private String[] wrongSpelling = {"neok", "nkeo", "enko", "noek", "keno", "neo"};
 
