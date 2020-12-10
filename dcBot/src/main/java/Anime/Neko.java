@@ -46,7 +46,8 @@ public class Neko extends ListenerAdapter {
         request.setRequestProperty("User-Agent", "Mozilla/5.0"); //needed so the request does not get blocked when coming from a raspberry pi
         request.connect();
 
-        JsonObject rootobj = j.parseReader(new InputStreamReader((InputStream) request.getContent())).getAsJsonObject();
+        JsonElement root = JsonParser.parseReader(new InputStreamReader((InputStream) request.getContent()));
+        JsonObject rootobj = root.getAsJsonObject();
         String nekoUrl = rootobj.get("url").getAsString();
         e.getChannel().sendMessage(nekoUrl).queue();
     }
