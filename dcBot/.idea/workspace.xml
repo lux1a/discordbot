@@ -6,7 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8df4cc3-9c44-4945-b557-93d8cd516c19" name="Default Changelist" comment="" />
+    <list default="true" id="e8df4cc3-9c44-4945-b557-93d8cd516c19" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Anime/Kitsune.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Anime/Kitsune.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Anime/Neko.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Anime/Neko.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Anime/Waifu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Anime/Waifu.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +52,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="idea.background.editor" value="C:\Users\dnbkt\Downloads\0qp9yi0mtl611.jpg,0,plain,center" />
     <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />

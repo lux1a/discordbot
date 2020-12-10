@@ -4,6 +4,7 @@ import Main.Main;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.google.gson.stream.JsonReader;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
@@ -44,8 +45,7 @@ public class Neko extends ListenerAdapter {
         request.setRequestProperty("User-Agent", "Mozilla/5.0"); //needed so the request does not get blocked when coming from a raspberry pi
         request.connect();
 
-        JsonParser jp = new JsonParser();
-        JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
+        JsonElement root = JsonParser.parseReader(new InputStreamReader((InputStream) request.getContent()));
         JsonObject rootobj = root.getAsJsonObject();
         String nekoUrl = rootobj.get("url").getAsString();
         e.getChannel().sendMessage(nekoUrl).queue();
