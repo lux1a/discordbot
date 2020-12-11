@@ -38,11 +38,10 @@ public class Kitsune extends Json {
         String sURL = "https://neko-love.xyz/api/v1/kitsune";
         URL url = new URL(sURL);
         URLConnection request = url.openConnection();
-        request.setRequestProperty("User-Agent", "Mozilla/5.0"); //needed so the request does not get blocked when coming from a raspberry pi
-        request.connect();
-
+        request.setRequestProperty("User-Agent", "Mozilla 5.0 (Windows; U; "
+                + "Windows NT 5.1; en-US; rv:1.8.0.11) "); //needed so the request does not get blocked when coming from a raspberry pi
         try {
-            BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
+            BufferedReader in = new BufferedReader(new InputStreamReader(request.getInputStream()));
             String line;
             line = in.readLine();
             String[] tokens = line.split(":");
@@ -55,5 +54,6 @@ public class Kitsune extends Json {
         catch (IOException ex) {
             System.out.println("I/O Error: " + ex.getMessage());
         }
+        request.connect();
     }
 }
