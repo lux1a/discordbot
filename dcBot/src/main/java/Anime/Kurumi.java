@@ -20,6 +20,6 @@ public class Kurumi extends ListenerAdapter {
     private void kurumiText(MessageReceivedEvent e, int end, String subfolder, String suffix) {
         Random r = new Random();
         int result = r.nextInt(end-1) + 1;
-        e.getChannel().sendMessage("https://luxia.ch/Kurumi/" + subfolder + result + suffix).queue();
+        e.getChannel().sendMessage("https://cdn.luxia.ch/Kurumi/" + subfolder + result + suffix).queue();
     }
 }
