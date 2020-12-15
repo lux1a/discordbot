@@ -52,7 +52,7 @@ public class Main {
         Ascii ascii = new Ascii();
         Channel channel = new Channel();
         jdaBuilder.addEventListeners(vanish, help, pong, neko, waifu, kitsune, bee, kurumi, say, crypto, info, ascii, channel);
-        jdaBuilder.setActivity(Activity.watching("Roberts fetten Cock"));
+        jdaBuilder.setActivity(Activity.watching("time fly by"));
         jda = jdaBuilder.build();
     }
 }
