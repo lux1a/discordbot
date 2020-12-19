@@ -1,11 +1,14 @@
 # Lux's Bot
 **Functions**:
-- Send Anime Pictures (Neko, Kitsune, Waifu) [does not work currently on raspberry pi, idk why]
-- Send Kurumi Pics and Gifs
+- Send Anime Pictures (Neko, Kitsune, Waifu)
+- Send Kurumi Pics and Gifs / Zero Two Pics and Gifs
 - Send Crypto Prices
 - Send the entire Bee Movie Script
 - Send various Ascii Art
-- extra commands: "say", "vanish" and "ping/pong"
+- Info on mentioned User
+- extra commands: "say", "vanish", "channel", and "ping/pong"
+
+- extra features: "Auto-Correction" for misspelled commands using Levensthein distance
 
 **Notes**:
 - Written entirely in Java, using JDA
