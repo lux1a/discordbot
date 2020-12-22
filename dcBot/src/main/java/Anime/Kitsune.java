@@ -1,7 +1,5 @@
 package Anime;
 
-import Main.Main;
-import Other.Json;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,32 +7,18 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.Arrays;
 
-public class Kitsune extends Json {
+public class Kitsune{
 
-    private String[] wrongSpelling = {"kitusne", "kistune", "kiutsne", "kistnue", "kitsnue", "kitsuen"};
-
-    @Override
-    public void onMessageReceived(MessageReceivedEvent e) {
-        if (e.getAuthor().isBot()) {
-        } else if (e.getMessage().getContentRaw().equals(Main.prefix + "kitsune")) {
-            try {
-                kitsuneText(e);
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
-        } else if (Arrays.asList(wrongSpelling).contains(Main.prefix + e.getMessage().getContentRaw())) {
-            e.getChannel().sendMessage("Did you mean **Kitsune**?").queue();
-            try {
-                kitsuneText(e);
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
+    public static void kitsune(MessageReceivedEvent e) {
+        try {
+            kitsuneText(e);
+        } catch (IOException ex) {
+            ex.printStackTrace();
         }
     }
-
-    private void kitsuneText(MessageReceivedEvent e) throws IOException {
+    
+    public static void kitsuneText(MessageReceivedEvent e) throws IOException {
         String sURL = "https://neko-love.xyz/api/v1/kitsune";
         URL url = new URL(sURL);
         URLConnection request = url.openConnection();

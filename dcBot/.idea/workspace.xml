@@ -7,8 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8df4cc3-9c44-4945-b557-93d8cd516c19" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Anime/Characters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Anime/Kitsune.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Anime/Kitsune.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Anime/Kurumi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Anime/Neko.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Anime/Neko.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Anime/Waifu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Anime/Waifu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Essentials/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Essentials/Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Essentials/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Essentials/Info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Other/BeeMovieScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Other/BeeMovieScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Other/Crypto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Other/Crypto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utility/Say.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utility/Say.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Anime/Kitsune.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Anime/Kitsune.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Anime/Kurumi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Anime/Neko.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Anime/Neko.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Anime/Waifu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Anime/Waifu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Essentials/Help.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Essentials/Help.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Essentials/Info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Essentials/Info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Other/BeeMovieScript.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Other/BeeMovieScript.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Other/Crypto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Other/Crypto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utility/Say.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utility/Say.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +75,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">

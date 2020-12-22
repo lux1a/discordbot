@@ -1,18 +1,14 @@
 package Utility;
 
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
-import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import Main.Main;
 
-public class Pong extends ListenerAdapter {
+public class Pong {
 
-    @Override
-    public void onMessageReceived(MessageReceivedEvent e) {
-        if (e.getAuthor().isBot()) {
-        } else if (e.getMessage().getContentRaw().equals(Main.prefix + "ping")) {
-            e.getChannel().sendMessage("pong!").queue();
-        } else if (e.getMessage().getContentRaw().equals(Main.prefix + "pong")) {
-            e.getChannel().sendMessage("ping!").queue();
-        }
+    public static void pong(MessageReceivedEvent e) {
+        e.getChannel().sendMessage("pong!").queue();
+    }
+
+    public static void ping(MessageReceivedEvent e) {
+        e.getChannel().sendMessage("ping!").queue();
     }
 }
